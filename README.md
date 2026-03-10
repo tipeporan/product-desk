@@ -1,6 +1,6 @@
 # Product Desk
 
-Open-source skills and agents to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
+Skills and Agents to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
 
 ## Available Tools
 
