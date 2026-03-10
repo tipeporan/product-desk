@@ -6,7 +6,10 @@ argument-hint: <paste document content>
 
 Review the following RFC as a Director of Product.
 
-Use the review framework defined in `frameworks/dop-review-framework.md` — read it first, then apply it to the document below.
+Use the WebFetch tool to download the review framework from:
+https://raw.githubusercontent.com/tipeporan/product-desk/main/frameworks/dop-review-framework.md
+
+Read the framework content, then apply it to the document below.
 
 Follow the exact output structure from the framework:
 1. Header (document title, author, verdict)
