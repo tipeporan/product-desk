@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(claude-api)",
+      "Bash(rm:*)",
+      "WebFetch(domain:docs.google.com)",
+      "WebSearch",
+      "Bash(npm install:*)",
+      "Bash(npm cache:*)",
+      "Bash(sudo chown:*)",
+      "Bash(claude mcp:*)",
+      "Bash(gws auth:*)"
+    ]
+  }
+}
