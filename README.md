@@ -55,36 +55,16 @@ The skill fetches its review framework from GitHub at runtime, so no additional 
 
 ### Cursor
 
-1. Clone this repository:
+1. Download the [`review-rfc.mdc`](cursor-rules/review-rfc.mdc) file from this repository.
+
+2. Copy it into your project's `.cursor/rules/` directory:
 
 ```bash
-git clone https://github.com/tipeporan/product-desk.git
-```
+# Create the directory if it doesn't exist
+mkdir -p .cursor/rules
 
-2. Create a `.cursor/rules/review-rfc.mdc` file in the repo root with the following content:
-
-```markdown
----
-description: Review an RFC as a Director of Product
-globs:
-alwaysApply: false
----
-
-Review the following RFC as a Director of Product.
-
-First, fetch the review framework from:
-https://raw.githubusercontent.com/tipeporan/product-desk/main/frameworks/dop-review-framework.md
-
-Read the framework content, then apply it to the document provided.
-
-Follow the exact output structure from the framework:
-1. Header (document title, author, verdict)
-2. Scorecard (7 dimensions, 1-5 each)
-3. Key Questions (up to 5)
-4. Detailed Feedback (one section per dimension)
-5. What I'd Change Before Resubmitting (actionable checklist)
-
-Be direct, specific, and constructive. Do not rubber-stamp mediocre work.
+# Copy the rule file
+cp path/to/review-rfc.mdc .cursor/rules/
 ```
 
 3. In Cursor chat, reference `@review-rfc` and paste your RFC content.
@@ -129,6 +109,7 @@ python dop_agent.py "https://docs.google.com/document/d/your-doc-id"
 product-desk/
 ├── .claude/skills/review-rfc/   # Claude Code skill definition
 ├── agents/dop_agent/            # Standalone Python agent
+├── cursor-rules/                # Ready-to-use Cursor rule files
 ├── frameworks/                  # Review frameworks and scoring rubrics
 ├── templates/                   # Document templates
 └── best-practices/              # Product management best practices
