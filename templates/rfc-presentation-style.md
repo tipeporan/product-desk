@@ -1,4 +1,4 @@
-# PRD: [Feature or Initiative Name]
+# RFC: [Feature or Initiative Name]
 
 **Product:** [Product/Area]  
 **Author:** [Name]  
@@ -7,7 +7,7 @@
 
 ---
 
-*This PRD uses presentation best practices: action-style headings (each section title states the key takeaway), one main idea per section, and a Problem → Promise → Proof → Proposal flow so the document tells the full story when read by headings alone.*
+*This RFC uses presentation best practices: action-style headings (each section title states the key takeaway), one main idea per section, and a Problem → Promise → Proof → Proposal flow so the document tells the full story when read by headings alone.*
 
 ---
 
@@ -118,4 +118,4 @@
 
 - **Changelog:** [Date and summary of material changes]
 - **FAQ:** [Recurring questions from stakeholders]
-- **References:** [Research, prior PRDs, or related docs]
+- **References:** [Research, prior RFCs, or related docs]

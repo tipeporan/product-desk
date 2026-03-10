@@ -2,7 +2,7 @@
 """
 Director of Product Review Agent
 
-Fetches an RFC or PRD from a Google Doc, pulls related Jira context,
+Fetches an RFC from a Google Doc, pulls related Jira context,
 and produces a structured review as a seasoned Director of Product.
 
 Usage:
@@ -58,7 +58,7 @@ SYSTEM_PROMPT = """You are Alex, a seasoned Director of Product with 12+ years o
 at high-growth tech companies. You are known for being direct, incisive, and deeply \
 strategic — you push PMs to think rigorously and raise the bar on every document they write.
 
-When reviewing a PRD or RFC you evaluate it across seven lenses:
+When reviewing an RFC you evaluate it across seven lenses:
 
 1. **Problem Clarity** — Is the problem specific, well-evidenced, and quantified? \
 Vague problem statements are a red flag.
@@ -178,8 +178,8 @@ TOOLS = [
     {
         "name": "search_confluence",
         "description": (
-            "Search Confluence for pages related to the RFC/PRD being reviewed "
-            "(e.g. strategy docs, prior PRDs, OKRs, design docs)."
+            "Search Confluence for pages related to the RFC being reviewed "
+            "(e.g. strategy docs, prior RFCs, OKRs, design docs)."
         ),
         "input_schema": {
             "type": "object",
@@ -213,7 +213,7 @@ TOOLS = [
     {
         "name": "search_jira_issues",
         "description": (
-            "Search Jira for issues related to the RFC/PRD "
+            "Search Jira for issues related to the RFC "
             "(e.g. linked epics, past initiatives in the same area)."
         ),
         "input_schema": {
@@ -409,7 +409,7 @@ def _dispatch_tool(tool_name: str, tool_input: dict) -> dict:
 # ── Agent loop ─────────────────────────────────────────────────────────────────
 
 def run_review(doc_ref: str) -> None:
-    """Run the Director of Product review for the given Google Doc."""
+    """Run the Director of Product RFC review for the given Google Doc."""
     if not all([ATLASSIAN_BASE_URL, ATLASSIAN_EMAIL, ATLASSIAN_API_TOKEN]):
         print(
             "❌  Missing Atlassian credentials.\n"
@@ -424,10 +424,10 @@ def run_review(doc_ref: str) -> None:
         {
             "role": "user",
             "content": (
-                f"Please review the following PRD or RFC from Google Docs. "
+                f"Please review the following RFC from Google Docs. "
                 f"The document reference is: {doc_ref}\n\n"
                 "Start by fetching the document content. Then search for up to 3 pieces "
-                "of relevant context (related strategy docs, OKRs, past PRDs, or "
+                "of relevant context (related strategy docs, OKRs, past RFCs, or "
                 "linked Jira epics) that would make your review more informed. "
                 "Finally, produce your full Director of Product review."
             ),
@@ -504,7 +504,7 @@ def run_review(doc_ref: str) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Director of Product Review Agent — reviews a Google Doc PRD/RFC"
+        description="Director of Product Review Agent — reviews a Google Doc RFC"
     )
     parser.add_argument(
         "doc",

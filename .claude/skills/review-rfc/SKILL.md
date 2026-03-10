@@ -1,10 +1,10 @@
 ---
-name: review-prd
-description: Review a PRD or RFC as a Director of Product
+name: review-rfc
+description: Review an RFC as a Director of Product
 argument-hint: <paste document content>
 ---
 
-Review the following RFC or PRD as a Director of Product.
+Review the following RFC as a Director of Product.
 
 Use the review framework defined in `frameworks/dop-review-framework.md` — read it first, then apply it to the document below.
 

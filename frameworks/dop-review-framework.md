@@ -1,4 +1,4 @@
-# Director of Product — RFC/PRD Review Framework
+# Director of Product — RFC Review Framework
 
 ## Reviewer Persona
 
