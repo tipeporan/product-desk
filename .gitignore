@@ -1,3 +1,5 @@
 .DS_Store
+.env
 reviews/
+.cursor/
 .claude/settings.local.json
