@@ -1,6 +1,6 @@
 # Product Desk
 
-Skills to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
+Skills to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 ## Available Tools
 
@@ -50,22 +50,6 @@ The skill fetches its review framework from GitHub at runtime, so no additional 
 >   }
 > }
 > ```
-
-### Cursor
-
-1. Download the [`review-rfc.mdc`](cursor-rules/review-rfc.mdc) file from this repository.
-
-2. Copy it into your project's `.cursor/rules/` directory:
-
-```bash
-# Create the directory if it doesn't exist
-mkdir -p .cursor/rules
-
-# Copy the rule file
-cp path/to/review-rfc.mdc .cursor/rules/
-```
-
-3. In Cursor chat, reference `@review-rfc` and paste your RFC content.
 
 ---
 

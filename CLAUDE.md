@@ -13,7 +13,6 @@ Product Desk is NOT a software project. It's a **product leadership workspace** 
 frameworks/           → Reusable evaluation and strategy frameworks
 templates/            → Document templates (status reports, presentations)
 best-practices/       → Product management guidance and methods
-cursor-rules/         → Pre-built Cursor rule files (.mdc)
 reviews/              → Archive of past RFC/PRD reviews
 ```
 
