@@ -11,7 +11,8 @@
       "Bash(claude mcp:*)",
       "Bash(gws auth:*)",
       "Bash(grep:*)",
-      "Bash(wc:*)"
+      "Bash(wc:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }
