@@ -1,6 +1,6 @@
 # Product Desk
 
-Skills to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
+Skills to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
 ## Available Tools
 
