@@ -1,6 +1,6 @@
 # Product Desk
 
-Skills and Agents to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
+Skills to help product managers work smarter with AI. Built for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and [Cursor](https://www.cursor.com/).
 
 ## Available Tools
 
@@ -17,8 +17,6 @@ You can provide your RFC in whichever way works best for you:
 Available as:
 
 - **Claude Code Skill** — invoke with `/review-rfc` inside Claude Code
-- **Standalone Agent** — a Python script that reads from Google Docs and pulls Jira/Confluence context automatically
-
 ---
 
 ## Installation
@@ -69,38 +67,6 @@ cp path/to/review-rfc.mdc .cursor/rules/
 
 3. In Cursor chat, reference `@review-rfc` and paste your RFC content.
 
-### Standalone Agent (Python)
-
-The agent can read RFCs directly from Google Docs and pull related context from Jira and Confluence.
-
-1. Install dependencies:
-
-```bash
-cd agents/dop_agent
-pip install -r requirements.txt
-```
-
-2. Set environment variables:
-
-```bash
-export ANTHROPIC_API_KEY="your-api-key"
-export ATLASSIAN_BASE_URL="https://yourcompany.atlassian.net"
-export ATLASSIAN_EMAIL="you@company.com"
-export ATLASSIAN_API_TOKEN="your-token"
-```
-
-3. Set up Google Docs access:
-   - Go to [Google Cloud Console](https://console.cloud.google.com/)
-   - Create a project and enable the **Google Docs API**
-   - Create an **OAuth 2.0 Client ID** (Desktop app) under APIs & Services > Credentials
-   - Download the JSON and save it as `credentials.json` in the `agents/dop_agent/` directory
-
-4. Run a review:
-
-```bash
-python dop_agent.py "https://docs.google.com/document/d/your-doc-id"
-```
-
 ---
 
 ## Repository Structure
@@ -108,7 +74,6 @@ python dop_agent.py "https://docs.google.com/document/d/your-doc-id"
 ```
 product-desk/
 ├── .claude/skills/review-rfc/   # Claude Code skill definition
-├── agents/dop_agent/            # Standalone Python agent
 ├── cursor-rules/                # Ready-to-use Cursor rule files
 ├── frameworks/                  # Review frameworks and scoring rubrics
 ├── templates/                   # Document templates

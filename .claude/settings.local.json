@@ -9,7 +9,9 @@
       "Bash(npm cache:*)",
       "Bash(sudo chown:*)",
       "Bash(claude mcp:*)",
-      "Bash(gws auth:*)"
+      "Bash(gws auth:*)",
+      "Bash(grep:*)",
+      "Bash(wc:*)"
     ]
   }
 }
