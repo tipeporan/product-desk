@@ -10,11 +10,9 @@ Product Desk is NOT a software project. It's a working desk for product work: re
 
 ```
 .claude/skills/       → Claude Code skills (review-rfc, doc-coauthoring)
-.cursor/skills/       → Cursor-specific skills (nubank-data-analysis)
 frameworks/           → Reusable evaluation and strategy frameworks
 templates/            → Document templates (status reports, presentations)
 best-practices/       → Product management guidance and methods
-cursor-rules/         → Pre-built Cursor rule files
 reviews/              → Archive of past RFC/PRD reviews
 ```
 
