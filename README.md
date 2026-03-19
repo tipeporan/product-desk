@@ -16,7 +16,7 @@ You can provide your RFC in whichever way works best for you:
 
 Available as:
 
-- **Claude Code Skill** — invoke with `/review-rfc` inside Claude Code
+- **Claude Code Skill** — invoke with `/dop-review` inside Claude Code
 ---
 
 ## Installation
@@ -33,7 +33,7 @@ cd product-desk
 2. That's it. Open Claude Code in the repo directory and the skill is ready:
 
 ```
-/review-rfc <paste your RFC content here>
+/dop-review <paste your RFC content here>
 ```
 
 The skill fetches its review framework from GitHub at runtime, so no additional files are needed locally.
@@ -44,7 +44,7 @@ The skill fetches its review framework from GitHub at runtime, so no additional 
 > {
 >   "permissions": {
 >     "allow": [
->       "Skill(review-rfc)",
+>       "Skill(dop-review)",
 >       "WebFetch(domain:raw.githubusercontent.com)"
 >     ]
 >   }
@@ -57,7 +57,7 @@ The skill fetches its review framework from GitHub at runtime, so no additional 
 
 ```
 product-desk/
-├── .claude/skills/review-rfc/   # Claude Code skill definition
+├── .claude/skills/dop-review/   # Claude Code skill definition
 ├── cursor-rules/                # Ready-to-use Cursor rule files
 ├── frameworks/                  # Review frameworks and scoring rubrics
 ├── templates/                   # Document templates

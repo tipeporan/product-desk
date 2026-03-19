@@ -9,7 +9,7 @@ Product Desk is NOT a software project. It's a **product leadership workspace** 
 ## Project Structure
 
 ```
-.claude/skills/       → Claude Code skills (review-rfc, doc-coauthoring)
+.claude/skills/       → Claude Code skills (dop-review, doc-coauthoring)
 frameworks/           → Reusable evaluation and strategy frameworks
 templates/            → Document templates (status reports, presentations)
 best-practices/       → Product management guidance and methods
@@ -18,7 +18,7 @@ reviews/              → Archive of past RFC/PRD reviews
 
 ## Key Skills
 
-### `/review-rfc` — RFC Review as Director of Product
+### `/dop-review` — RFC Review as Director of Product
 Reviews RFCs across 7 structured dimensions (Problem Clarity, Solution Soundness, Evidence & Validation, Success Metrics, Business Impact, Strategic Fit, Execution Realism). Produces a scored verdict: Approved, Revise & Resubmit, or Not Ready. The full rubric lives in `frameworks/dop-review-framework.md`. RFCs can be provided as a Google Doc URL, local file path, or pasted content.
 
 ### `/doc-coauthoring` — Structured Document Co-Authoring
